@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak Saya</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2 class="logo">MyPortfolio</h2>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html">Keahlian</a></li>
+        <li><a href="contact/contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <section class="contact-section">
+      <h2>Kontak Saya</h2>
+      <p>
+        Halo! Saya terbuka untuk berkenalan dan belajar bersama. Jika kamu
+        tertarik berdiskusi seputar pemrograman atau ingin belajar bareng.
+      </p>
+
+      <button class="btn-contact" onclick="openPopup()">Hubungi Saya</button>
+
+      <div class="social-links">
+        <a href="https://instagram.com/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://linkedin.com/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </section>
+
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h3>Kirim Pesan</h3>
+
+        <form id="contactForm">
+          <input type="text" placeholder="Nama" required />
+          <input type="email" placeholder="Email" required />
+          <textarea
+            placeholder="Tulis pesan atau komentar..."
+            required
+          ></textarea>
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="contact.js"></script>
+  </body>
+</html>

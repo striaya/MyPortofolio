@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Saya</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/kucingkucingan.png" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2 class="logo">MyPortfolio</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="contact/contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>Satria Henggar Yoselino</h1>
+        <p>
+          Saya adalah pelajar backend yang memiliki ketertarikan pada
+          pengembangan sistem di sisi server, termasuk pembuatan REST API,
+          manajemen database, dan optimasi performa aplikasi. Saat ini saya
+          mempelajari PHP, JavaScript, dan Golang sebagai bagian dari proses
+          pengembangan diri. Saya terbiasa belajar melalui dokumentasi, praktik
+          langsung, dan mini project untuk meningkatkan kemampuan teknis dan
+          problem solving.
+        </p>
+
+        <div class="social-icons">
+          <a href="https://instagram.com/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://linkedin.com/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="hero-img">
+        <img src="img/myfoto.jpeg" alt="Foto Profile" />
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2>Keahlian & Proses Pembelajaran</h2>
+
+      <div class="card-container">
+        <div class="card">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+          <p>Mempelajari dasar hingga DOM, fetch API, dan interaksi website.</p>
+        </div>
+
+        <div class="card">
+          <i class="fab fa-php"></i>
+          <h3>PHP</h3>
+          <p>Belajar backend, CRUD, dan koneksi database MySQL.</p>
+        </div>
+
+        <div class="card">
+          <i class="fab fa-golang"></i>
+          <h3>Golang</h3>
+          <p>
+            Proses belajar REST API, struktur project, dan performa backend.
+          </p>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Problem Solving</h3>
+          <p>Melatih logika dengan studi kasus dan mini project.</p>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-book"></i>
+          <h3>Self Learning</h3>
+          <p>Belajar mandiri melalui dokumentasi dan video online.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience">
+    <h2>Pengalaman Saya</h2>
+
+    <div class="experience-container">
+
+        <div class="experience-card">
+            <img src="img/laravel.jpg" alt="Pengalaman 1">
+            <div class="experience-content">
+                <h3>Belajar Backend Development</h3>
+                <span>2025 - Sekarang</span>
+                <p>
+                    Mempelajari backend development dengan fokus pada pembuatan
+                    REST API, pengelolaan database, dan struktur project
+                    menggunakan PHP dan Golang.
+                </p>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <img src="img/java.jpg" alt="Pengalaman 2">
+            <div class="experience-content">
+                <h3>Mini Project Java</h3>
+                <span>2025 - Sekarang</span>
+                <p>
+                    Membuat mini project menggunakan bahasa pemrograman Java dan mempelajari Java, C, C#, C++
+                </p>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <img src="img/flutter.jpg" alt="Pengalaman 3">
+            <div class="experience-content">
+                <h3>Belajar Flutter</h3>
+                <span>2025 - Sekarang</span>
+                <p>
+                    Mempelajari Bahasa Pemrograman Flutter/Dart di sekolah SMK Negeri 64 Jakarta.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="mini-game">
+    <h2>Mini Game</h2>
+    <p>Tebak angka dari 1 sampai 10</p>
+
+    <div class="game-card">
+        <input type="number" id="guessInput" placeholder="Masukkan angka">
+        <button onclick="checkGuess()">Tebak</button>
+        <p id="result"></p>
+        <button class="reset" onclick="resetGame()">Reset Game</button>
+    </div>
+</section>
+
+    <footer id="contact">
+      <p>© 2026 Satria Henggar Yoselino | Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
