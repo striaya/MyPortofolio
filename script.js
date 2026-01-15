@@ -45,3 +45,31 @@ function resetGame() {
   document.getElementById("guessInput").value = "";
   document.getElementById("result").textContent = "";
 }
+
+const container = document.querySelector(".testimonial-container");
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
+
+next.addEventListener("click", () => {
+  container.scrollBy({ left: 370, behavior: "smooth" });
+});
+
+prev.addEventListener("click", () => {
+  container.scrollBy({ left: -370, behavior: "smooth" });
+});
+
+const progressBars = document.querySelectorAll(".progress");
+
+function animateProgress() {
+  progressBars.forEach((bar) => {
+    const value = bar.getAttribute("data-progress");
+    const barTop = bar.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+    if (barTop < screenHeight - 50) {
+      bar.style.width = value;
+    }
+  });
+}
+
+window.addEventListener("scroll", animateProgress);
+window.addEventListener("load", animateProgress);
