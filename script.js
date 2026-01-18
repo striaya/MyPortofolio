@@ -73,3 +73,21 @@ function animateProgress() {
 
 window.addEventListener("scroll", animateProgress);
 window.addEventListener("load", animateProgress);
+
+function showSkill(skill) {
+  const detail = document.getElementById("skillDetail");
+  const title = document.getElementById("detailTitle");
+  const desc = document.getElementById("detailDesc");
+
+  if (skill === "golang") {
+    title.innerText = "Golang (Go)";
+    desc.innerText =
+      "Golang adalah bahasa pemrograman buatan Google yang fokus pada performa, concurrency, dan kesederhanaan. Sangat cocok untuk backend, REST API, dan sistem berskala besar.";
+  }
+
+  detail.style.display = "flex";
+}
+
+function closeDetail() {
+  document.getElementById("skillDetail").style.display = "none";
+}

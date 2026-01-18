@@ -69,13 +69,12 @@
           <p>Belajar backend, CRUD, dan koneksi database MySQL.</p>
         </div>
 
-        <div class="card">
-          <i class="fab fa-golang"></i>
-          <h3>Golang</h3>
-          <p>
-            Proses belajar REST API, struktur project, dan performa backend.
-          </p>
-        </div>
+       <div class="card" onclick="showSkill('golang')">
+  <i class="fab fa-golang"></i>
+  <h3>Golang</h3>
+  <p>Proses REST API, struktur project, dan performa backend.</p>
+</div>
+
 
         <div class="card">
           <i class="fas fa-laptop-code"></i>
@@ -158,6 +157,26 @@
             <div class="progress" data-progress="60%"></div>
         </div>
     </div>
+</section>
+
+<section class="skill-detail" id="skillDetail">
+  <div class="detail-card">
+    <h2 id="detailTitle">Golang</h2>
+    <p id="detailDesc">
+      Golang adalah bahasa pemrograman open-source buatan Google yang dirancang
+      untuk pengembangan backend dengan performa tinggi, sederhana, dan mudah
+      dipelajari.
+    </p>
+
+    <ul>
+      <li> Cepat dan efisien</li>
+      <li> Mendukung concurrency (goroutine)</li>
+      <li> Cocok untuk REST API & Microservices</li>
+      <li> Mudah dalam manajemen dependency</li>
+    </ul>
+
+    <button onclick="closeDetail()">Tutup</button>
+  </div>
 </section>
 
     <section class="mini-game">
