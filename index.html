@@ -56,7 +56,7 @@
     <section class="skills" id="skills">
       <h2>Keahlian & Proses Pembelajaran</h2>
 
-      <div class="card-container">
+      <div class="card-container" onclick="showSkill('js')">
         <div class="card">
           <i class="fab fa-js"></i>
           <h3>JavaScript</h3>
@@ -190,6 +190,22 @@
       <li> Logika aplikasi dijalankan di server sehingga lebih aman untuk pengolahan data.</li>
       <li> PHP sangat baik digunakan dengan MySQL dan database lain untuk kebutuhan CRUD.</li>
       <li> Tersedia framework seperti Laravel, CodeIgniter, dan Symfony yang mempercepat development.</li>
+    </ul>
+
+    <button onclick="closeDetail()">Tutup</button>
+  </div>
+</section>
+
+<section class="skill-detail" id="skillDetail">
+    <h2 id="detailTitle">JavaScript</h2>
+    <p id="detailDesc">
+  JavaScript adalah bahasa pemrograman yang digunakan untuk membuat website menjadi interaktif dan dinamis. JavaScript berjalan di sisi client (browser) dan memungkinkan pengembang mengelola tampilan, merespons interaksi pengguna, serta berkomunikasi dengan server melalui API. JavaScript sering digunakan untuk manipulasi DOM, validasi form, dan pengambilan data secara asynchronous menggunakan Fetch API atau AJAX.    </p>
+
+    <ul>
+      <li> Dapat menangani event seperti klik, input, dan animasi.</li>
+      <li> Tidak memerlukan kompilasi tambahan untuk dijalankan.</li>
+      <li> Menggunakan Promise, async/await, dan Fetch API.</li>
+      <li> Dapat berkomunikasi dengan REST API (PHP, Golang, dll).</li>
     </ul>
 
     <button onclick="closeDetail()">Tutup</button>

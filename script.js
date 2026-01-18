@@ -79,6 +79,12 @@ function showSkill(skill) {
   const title = document.getElementById("detailTitle");
   const desc = document.getElementById("detailDesc");
 
+  if (skill === "js") {
+    title.innerText = "JavaScript";
+    desc.innerText =
+      "JavaScript adalah bahasa pemrograman yang digunakan untuk membuat website interaktif dan dinamis. Dengan JavaScript, pengembang dapat menambahkan elemen-elemen seperti animasi, validasi form, manipulasi DOM, dan interaksi pengguna lainnya pada halaman web. JavaScript berjalan di sisi klien (browser) dan dapat berkomunikasi dengan server melalui teknologi seperti AJAX dan Fetch API. Selain itu, JavaScript juga memiliki ekosistem yang kaya dengan berbagai library dan framework seperti React, Angular, dan Vue.js yang memudahkan pengembangan aplikasi web modern.";
+  }
+  
   if (skill === "php") {
     title.innerText = "PHP (Hypertext Preprocessor)";
     desc.innerText =
