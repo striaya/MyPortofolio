@@ -79,6 +79,12 @@ function showSkill(skill) {
   const title = document.getElementById("detailTitle");
   const desc = document.getElementById("detailDesc");
 
+  if (skill === "php") {
+    title.innerText = "PHP (Hypertext Preprocessor)";
+    desc.innerText =
+      "PHP (Hypertext Preprocessor) adalah bahasa pemrograman server-side yang digunakan untuk membangun website dan aplikasi web dinamis. PHP berjalan di sisi server untuk mengelola logika aplikasi, memproses data, dan berinteraksi dengan database seperti MySQL. Bahasa ini banyak digunakan dalam pengembangan backend karena sintaksnya relatif mudah dipelajari, fleksibel, serta didukung oleh banyak framework seperti Laravel. PHP sangat cocok untuk pembuatan fitur CRUD, sistem autentikasi, REST API, dan pengelolaan data pada aplikasi web.";
+  }
+
   if (skill === "golang") {
     title.innerText = "Golang (Go)";
     desc.innerText =

@@ -63,7 +63,7 @@
           <p>Mempelajari dasar hingga DOM, fetch API, dan interaksi website.</p>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="showSkill('php')">
           <i class="fab fa-php"></i>
           <h3>PHP</h3>
           <p>Belajar backend, CRUD, dan koneksi database MySQL.</p>
@@ -173,6 +173,23 @@
       <li> Mendukung concurrency (goroutine)</li>
       <li> Cocok untuk REST API & Microservices</li>
       <li> Mudah dalam manajemen dependency</li>
+    </ul>
+
+    <button onclick="closeDetail()">Tutup</button>
+  </div>
+</section>
+
+<section class="skill-detail" id="skillDetail">
+    <h2 id="detailTitle">Php</h2>
+    <p id="detailDesc">
+   PHP (Hypertext Preprocessor) adalah bahasa pemrograman server-side yang digunakan untuk membangun website dan aplikasi web dinamis. PHP berjalan di sisi server untuk mengelola logika aplikasi, memproses data, dan berinteraksi dengan database seperti MySQL. Bahasa ini banyak digunakan dalam pengembangan backend karena sintaksnya relatif mudah dipelajari, fleksibel, serta didukung oleh banyak framework seperti Laravel. PHP sangat cocok untuk pembuatan fitur CRUD, sistem autentikasi, REST API, dan pengelolaan data pada aplikasi web.
+    </p>
+
+    <ul>
+      <li> Sintaks PHP sederhana dan cocok untuk pemula backend.</li>
+      <li> Logika aplikasi dijalankan di server sehingga lebih aman untuk pengolahan data.</li>
+      <li> PHP sangat baik digunakan dengan MySQL dan database lain untuk kebutuhan CRUD.</li>
+      <li> Tersedia framework seperti Laravel, CodeIgniter, dan Symfony yang mempercepat development.</li>
     </ul>
 
     <button onclick="closeDetail()">Tutup</button>
