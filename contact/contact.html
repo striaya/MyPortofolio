@@ -1,65 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kontak Saya</title>
-
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="icon" href="../img/kucingkucingan.png" />
   </head>
   <body>
-    <nav class="navbar">
+
+       <nav class="navbar">
       <h2 class="logo">MyPortfolio</h2>
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../index.html">Keahlian</a></li>
+        <li><a href="#skills">Keahlian</a></li>
         <li><a href="contact/contact.html">Kontak</a></li>
       </ul>
     </nav>
 
-    <section class="contact-section">
-      <h2>Kontak Saya</h2>
-      <p>
-        Halo! Saya terbuka untuk berkenalan dan belajar bersama. Jika kamu
-        tertarik berdiskusi seputar pemrograman atau ingin belajar bareng.
-      </p>
+    <section class="contact">
+      <div class="contact-overlay"></div>
 
-      <button class="btn-contact" onclick="openPopup()">Hubungi Saya</button>
+      <div class="contact-container">
+        <!-- LEFT -->
+        <div class="contact-info reveal left">
+          <h2>Contact Us</h2>
+          <p>
+            Silakan hubungi saya melalui informasi di bawah ini atau kirim pesan
+            langsung melalui form.
+          </p>
 
-      <div class="social-links">
-        <a href="https://instagram.com/" target="_blank"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a href="https://linkedin.com/" target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="https://github.com/" target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
+          <div class="info-item">
+            <i class="fas fa-house"></i>
+            <div>
+              <h4>Address</h4>
+              <span>Jakarta, Indonesia</span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <span>08xxxxxxxxxx</span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <span>satria@email.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form reveal right">
+          <h3>Send Message</h3>
+
+          <form>
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email" required />
+            <textarea placeholder="Type your Message..." required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </div>
     </section>
-
-    <div class="popup" id="popup">
-      <div class="popup-content">
-        <span class="close" onclick="closePopup()">&times;</span>
-        <h3>Kirim Pesan</h3>
-
-        <form id="contactForm">
-          <input type="text" placeholder="Nama" required />
-          <input type="email" placeholder="Email" required />
-          <textarea
-            placeholder="Tulis pesan atau komentar..."
-            required
-          ></textarea>
-          <button type="submit">Kirim</button>
-        </form>
-      </div>
-    </div>
-
     <script src="contact.js"></script>
   </body>
 </html>
