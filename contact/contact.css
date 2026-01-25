@@ -6,6 +6,9 @@
 }
 
 .navbar {
+  position: sticky; 
+  top: 0;
+  z-index: 9999;
   background: #fff;
   border-bottom: 1px solid #eee;
 }
@@ -226,7 +229,9 @@
 }
 
 .contact-form button {
-  transition: background 0.3s, transform 0.2s;
+  transition:
+    background 0.3s,
+    transform 0.2s;
 }
 
 .contact-form button:hover {
