@@ -106,7 +106,6 @@
 .pricing {
   padding: 50px 0;
   background: #fafafa;
-  font-family: "Inter", sans-serif;
 }
 
 .pricing-grid {
@@ -135,7 +134,8 @@
 
 .card h4 {
   letter-spacing: 2px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
+  margin-top: 10px;
 }
 
 .subtitle {
@@ -148,7 +148,7 @@
 }
 
 .card h2 {
-  font-size: 38px;
+  font-size: 30px;
   margin: 25px 0 5px;
 }
 
@@ -162,7 +162,7 @@
   margin: 25px 0;
   padding: 14px 30px;
   border-radius: 30px;
-  background: #f3b632;
+  background: #ffee00;
   color: #000;
   font-weight: 600;
   text-decoration: none;
@@ -208,7 +208,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: #d35400;
+  background: #ff6600;
   color: #fff;
   padding: 12px 0;
   font-size: 13px;
