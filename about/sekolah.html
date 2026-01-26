@@ -8,47 +8,132 @@
     <link rel="icon" href="../img/kucingkucingan.png">
 </head>
 <body>
-    <section class="experience">
-  <div class="container">
 
-    <div class="section-header fade">
-      <span class="tag">About</span>
-      <h2>Pengalaman Sekolah</h2>
-      <p>Perjalanan belajar, pengembangan skill, dan pengalaman selama bersekolah.</p>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="../img/icon.png" alt="Logo" />
+          <span>MyPortfolio</span>
+        </div>
+
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+
+          <li class="dropdown">
+            <a href="#">About ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="../about/about.html">Tentang Saya</a></li>
+              <li><a href="../about/sekolah.html">Pengalaman Sekolah</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Skills ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Experience ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </li>
+
+          <li><a href="../projects/projects.html">Projects</a></li>
+          <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+
+        <a href="../jasawebsite/web.html" class="btn-trial">Beli Jasa</a>
+      </div>
+    </nav>
+
+   <section class="about" id="about">
+      <div class="about-highlights">
+        <div class="highlight-item">
+          <p>Backend Learning at School</p>
+          <span>PHP & Golang</span>
+        </div>
+        <div class="highlight-item">
+          <p>Ekstrakulikuler</p>
+          <span>Taekwondo, Robotik & Jurnalistik</span>
+        </div>
+        <div class="highlight-item">
+          <p>learning journey</p>
+          <span>Fokus backend development</span>
+        </div>
+      </div>
+
+      <div class="about-wrapper">
+        <div class="about-text">
+          <h4>My story</h4>
+          <h2>About Me</h2>
+          <p>
+            Saya Satria Henggar Yoselino lahir 20-05-2009, dengan minat di
+            bidang backend development. Saya fokus membangun sistem yang
+            terstruktur dan efisien menggunakan PHP, MySQL, dan Laravel, serta
+            terus mengembangkan kemampuan logika dan problem solving untuk
+            menciptakan solusi yang andal.
+          </p>
+        </div>
+
+        <div class="about-image">
+          <img src="../img/kstria.jpeg" alt="About Illustration" />
+        </div>
+      </div>
+    </section>
+
+    <div class="about-hero">
+      <img src="../img/rpggame.gif" alt="About Us" />
+      <div class="hero-overlay"></div>
     </div>
+    <section id="tentangsekolah" class="about-ak">
 
-    <div class="timeline">
+      <div class="about-content">
+        <h2>Pendidikan & Pengalaman Sekolah</h2>
 
-      <div class="timeline-item slide">
-        <span class="year">2023 – Sekarang</span>
-        <h3>SMK – Rekayasa Perangkat Lunak</h3>
         <p>
-          Mempelajari dasar pemrograman, web development, backend, database,
-          serta membangun project website sebagai latihan dan portfolio.
+          Saya adalah pelajar SMK Negeri 64 Jakarta yang memiliki ketertarikan
+          pada pengembangan backend dan sistem berbasis web. Sejak tahun 2025,
+          saya mulai mendalami pembuatan REST API dan manajemen database.
+        </p>
+
+        <p>
+          Saya fokus mempelajari pembuatan REST API, pengelolaan database, dan
+          struktur project menggunakan PHP, JavaScript, dan Golang. Saya
+          terbiasa belajar melalui dokumentasi resmi, praktik langsung, dan mini
+          project. Dan saya mengikuti Ekstra Kurikuler Robotik serta Taekwondo
+          di sekolah.
+        </p>
+
+        <p class="call">
+          SMK Negeri 64 Jakarta Jl. Mpok Nori, RT.09/RW.03, Bambu Apus, Kec.
+          Cipayung, Kota Jakarta Timur, DKI Jakarta, kode pos 13890
         </p>
       </div>
 
-      <div class="timeline-item slide">
-        <span class="year">Pembelajaran</span>
-        <h3>Pengembangan Skill</h3>
-        <p>
-          Menguasai HTML, CSS, JavaScript, PHP, Laravel, MySQL,
-          serta memahami konsep backend dan struktur aplikasi web.
-        </p>
-      </div>
+      <div class="about-cards">
+        <div class="card">
+          <img src="../img/robotik.jpeg" />
+          <div class="card-overlay">
+            <h4>Eskul Robotik dengan jabatan sebagai Wakil Ketua</h4>
+          </div>
+        </div>
 
-      <div class="timeline-item slide">
-        <span class="year">Project</span>
-        <h3>Project Sekolah & Mandiri</h3>
-        <p>
-          Mengerjakan project CRUD, website portfolio, sistem absensi,
-          dan aplikasi berbasis web sebagai penguatan skill praktik.
-        </p>
+        <div class="card">
+          <img src="../img/tekondo.jpeg" />
+          <div class="card-overlay">
+            <h4>Eskul Taekwondo dengan jabatan sebagai Ketua</h4>
+          </div>
+        </div>
       </div>
-
-    </div>
-  </div>
-</section>
+    </section>
+    <footer id="contact">
+      <p>© 2026 Satria Henggar Yoselino | Portfolio</p>
+    </footer>
 <script src="sekolah.js"></script>
 </body>
 </html>

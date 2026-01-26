@@ -1,14 +1,12 @@
-const elements = document.querySelectorAll(".fade, .slide");
+const about = document.querySelector(".about");
 
 const observer = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
-    });
+  ([entry]) => {
+    if (entry.isIntersecting) {
+      about.classList.add("show");
+    }
   },
-  { threshold: 0.2 }
+  { threshold: 0.3 }
 );
 
-elements.forEach(el => observer.observe(el));
+observer.observe(about);
