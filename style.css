@@ -13,6 +13,8 @@ body {
 .navbar {
   background: #fff;
   border-bottom: 1px solid #eee;
+  position: relative;
+  z-index: 999;
 }
 
 .nav-container {
@@ -39,6 +41,7 @@ body {
 }
 
 .nav-menu {
+  z-index: 1000;
   display: flex;
   list-style: none;
   gap: 28px;
@@ -102,6 +105,20 @@ body {
 .btn-trial:hover {
   background: #000;
   color: #fff;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #000;
+  border-radius: 5px;
 }
 
 .hero {
@@ -509,5 +526,58 @@ footer {
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    display: none;
+    gap: 0;
+    padding: 15px 0;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+  }
+
+  .nav-menu li {
+    padding: 12px 20px;
+  }
+
+  .nav-menu.show {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .btn-trial {
+    display: none; 
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    padding-left: 15px;
+    opacity: 1;
+    visibility: visible;
+    display: none;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: block;
   }
 }

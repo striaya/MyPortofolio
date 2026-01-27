@@ -1,14 +1,15 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu Jasa Website</title>
-    <link rel="stylesheet" href="web.css" />
-    <link rel="icon" href="../img/kucingkucingan.png" />
-  </head>
-  <body>
-    <nav class="navbar">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Landing</title>
+  <link rel="stylesheet" href="web.css">
+  <link rel="icon" href="">
+</head>
+<body>
+
+  <nav class="navbar">
       <div class="nav-container">
         <div class="logo">
           <img src="../img/icon.png" alt="Logo" />
@@ -22,11 +23,7 @@
             <a href="#">About ▾</a>
             <ul class="dropdown-menu">
               <li><a href="../about/about.html">Tentang Saya</a></li>
-              <li>
-                <a href="../about/about.html#tentangsekolah"
-                  >Pengalaman Sekolah</a
-                >
-              </li>
+              <li><a href="../about/about.html#tentangsekolah">Pengalaman Sekolah</a></li>
             </ul>
           </li>
 
@@ -50,78 +47,55 @@
           <li><a href="../contact/contact.html">Contact</a></li>
         </ul>
 
-        <a href="../Ksauaja/jasawebsite/web.html" class="btn-trial"
-          >Beli Jasa</a
-        >
+              <div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+        <a href="../jasawebsite/web.html" class="btn-trial">Beli Jasa</a>
       </div>
     </nav>
+    
+<section class="hero">
+  <div class="hero-overlay">
+    <span class="badge">FASHION</span>
+    <h1>LET’S EXPLORE <br><span>UNIQUE</span> CLOTHES.</h1>
+    <p>Live for influential and innovative fashion!</p>
+    <a href="#" class="btn">Shop Now</a>
+  </div>
+</section>
 
-    <section class="pricing">
-      <div class="pricing-grid">
-        <div class="card">
-          <h4>Basic</h4>
-          <p class="subtitle">Cocok untuk kebutuhan dasar dan hemat</p>
-          <h2>Rp 300.000</h2>
+<section class="brands">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Obey_logo.svg">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Shopify_logo_2018.svg">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Amazon_logo.svg">
+</section>
 
-          <span class="per">/paket</span>
-          <a
-            class="btn"
-            href="https://wa.me/6285716700904?text=Halo%20saya%20ingin%20membeli%20jasa%20pembuatan%20website"
-            >Pesan Sekarang</a
-          >
+<section class="products">
+  <h2>New Arrivals</h2>
 
-          <ul>
-            <li>1 Halaman</li>
-            <li>Responsive Design</li>
-            <li>Basic SEO</li>
-            <li>1x Revisi</li>
-          </ul>
-        </div>
+  <div class="product-grid">
+    <div class="card reveal">
+      <img src="https://i.imgur.com/X9aQ5xT.jpg">
+      <h3>Hoodies & Sweatshirt</h3>
+      <span>Explore Now</span>
+    </div>
 
-        <div class="card best">
-          <span class="badge">Paling Laku</span>
-          <h4>Pro</h4>
-          <p class="subtitle">Paling lengkap untuk bisnis berkembang</p>
-          <h2>Rp 800.000</h2>
-          <span class="per">/paket</span>
+    <div class="card reveal">
+      <img src="https://i.imgur.com/YpF4LJj.jpg">
+      <h3>Coats & Parkas</h3>
+      <span>Explore Now</span>
+    </div>
 
-          <a
-            class="btn"
-            href="https://wa.me/6285716700904?text=Halo%20saya%20ingin%20membeli%20jasa%20pembuatan%20website"
-            >Pesan Sekarang</a
-          >
+    <div class="card reveal">
+      <img src="https://i.imgur.com/JD0pR6F.jpg">
+      <h3>Tees & T-Shirt</h3>
+      <span>Explore Now</span>
+    </div>
+  </div>
+</section>
 
-          <ul>
-            <li>3 Halaman</li>
-            <li>Mobile + Tablet Responsive</li>
-            <li>Basic SEO</li>
-            <li>3x Revisi</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h4>Premium</h4>
-          <p class="subtitle">Website powerful untuk skala besar</p>
-          <h2>Rp 2.000.000</h2>
-          <span class="per">/paket</span>
-
-          <a
-            class="btn"
-            href="https://wa.me/6285716700904?text=Halo%20saya%20ingin%20membeli%20jasa%20pembuatan%20website"
-            >Pesan Sekarang</a
-          >
-
-          <ul>
-            <li>Custom System</li>
-            <li>API Integration</li>
-            <li>Advanced Security</li>
-            <li>Unlimited Revisi</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <footer id="contact">
-      <p>© 2026 Satria Henggar Yoselino | Portfolio</p>
-    </footer>
-  </body>
+<script src="web.js"></script>
+</body>
 </html>
