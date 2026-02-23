@@ -581,3 +581,178 @@ footer {
     display: block;
   }
 }
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+.hero {
+flex-direction: column;
+text-align: center;
+padding: 60px 30px;
+}
+
+.hero-text h1 {
+font-size: 36px;
+}
+
+.hero-text p {
+margin: auto;
+}
+
+.hero-img img {
+width: 220px;
+margin-top: 20px;
+}
+
+.skills,
+.experience,
+.mini-game,
+.testimonial,
+.learning {
+
+padding: 60px 30px;
+
+}
+
+}
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+
+/* HERO */
+
+.hero {
+
+padding: 50px 20px;
+
+}
+
+.hero-text h1 {
+
+font-size: 28px;
+
+}
+
+.hero-text p {
+
+font-size: 14px;
+
+}
+
+.hero-img img {
+
+width: 180px;
+
+}
+
+
+/* SKILLS CARD */
+
+.card-container {
+
+grid-template-columns: 1fr;
+
+}
+
+
+/* EXPERIENCE */
+
+.experience-container {
+
+grid-template-columns: 1fr;
+
+}
+
+
+/* TESTIMONIAL */
+
+.testimonial-card {
+
+min-width: 85%;
+
+}
+
+
+/* SKILL BAR */
+
+.skill {
+
+max-width: 100%;
+
+}
+
+
+/* GAME */
+
+.game-card {
+
+width: 100%;
+
+}
+
+
+/* SECTION TITLE */
+
+h2 {
+
+font-size: 26px;
+
+}
+
+
+/* NAV LOGO */
+
+.logo img {
+
+width: 40px;
+height: 40px;
+
+}
+
+}
+
+
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+
+.hero-text h1 {
+
+font-size: 24px;
+
+}
+
+.hero-text p {
+
+font-size: 13px;
+
+}
+
+.skills,
+.experience,
+.mini-game,
+.testimonial,
+.learning {
+
+padding: 40px 15px;
+
+}
+
+.detail-card {
+
+width: 95%;
+
+}
+
+}

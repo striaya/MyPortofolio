@@ -33,3 +33,13 @@ const hamburger = document.getElementById("hamburger");
     navMenu.classList.remove("show");
   }
 });
+
+const progress = document.querySelectorAll(".progress");
+
+progress.forEach(bar => {
+
+let value = bar.getAttribute("data-progress");
+
+bar.style.width = value;
+
+});
