@@ -5,6 +5,9 @@
   font-family: "Inter", sans-serif;
 }
 
+body{
+color:#000;
+}
 
 .navbar {
   background: #fff;
@@ -267,6 +270,7 @@ line-height:1.7;
 footer {
   text-align: center;
   padding: 20px;
+  background-color: #eee;
 }
 
 @media (max-width: 768px) {
