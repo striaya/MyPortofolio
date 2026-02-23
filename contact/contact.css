@@ -39,7 +39,7 @@
 }
 
 .nav-menu {
-    z- index: 1000;
+    z-index: 1000;
   display: flex;
   list-style: none;
   gap: 28px;
