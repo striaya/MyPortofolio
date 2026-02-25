@@ -35,13 +35,9 @@
                 <a href="/skills/skill.html">Skills</a>
             </li>
 
-            <li class="dropdown">
-                <a href="#">Experience ▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
-            </li>
+          <li>
+            <a href="/experience/exp.html">Experience</a>
+          </li>
 
             <li><a href="/projects/projects.html">Projects</a></li>
             <li><a href="/contact/contact.html">Contact</a></li>
@@ -88,42 +84,43 @@
       </div>
     </section>
 
-    <section class="skills" id="skills">
-      <h2>Keahlian & Proses Pembelajaran</h2>
+<section class="skills" id="skills">
+  <h2>Keahlian & Proses Pembelajaran</h2>
 
-      <div class="card-container">
-        <div class="card">
-          <i class="fab fa-js"></i>
-          <h3>JavaScript</h3>
-          <p>Mempelajari dasar hingga DOM, fetch API, dan interaksi website.</p>
-        </div>
+  <div class="card-container">
 
-        <div class="card" onclick="showSkill('php')">
-          <i class="fab fa-php"></i>
-          <h3>PHP</h3>
-          <p>Belajar backend, CRUD, dan koneksi database MySQL.</p>
-        </div>
+    <div class="card" onclick="showSkill('js')">
+      <i class="fab fa-js"></i>
+      <h3>JavaScript</h3>
+      <p>Mempelajari dasar hingga DOM, fetch API, dan interaksi website.</p>
+    </div>
 
-       <div class="card" onclick="showSkill('golang')">
-  <i class="fab fa-golang"></i>
-  <h3>Golang</h3>
-  <p>Proses REST API, struktur project, dan performa backend.</p>
-</div>
+    <div class="card" onclick="showSkill('php')">
+      <i class="fab fa-php"></i>
+      <h3>PHP</h3>
+      <p>Belajar backend, CRUD, dan koneksi database MySQL.</p>
+    </div>
 
+    <div class="card" onclick="showSkill('golang')">
+      <i class="fab fa-golang"></i>
+      <h3>Golang</h3>
+      <p>Proses REST API, struktur project, dan performa backend.</p>
+    </div>
 
-        <div class="card">
-          <i class="fas fa-laptop-code"></i>
-          <h3>Problem Solving</h3>
-          <p>Melatih logika dengan studi kasus dan mini project.</p>
-        </div>
+    <div class="card" onclick="showSkill('problem')">
+      <i class="fas fa-laptop-code"></i>
+      <h3>Problem Solving</h3>
+      <p>Melatih logika dengan studi kasus dan mini project.</p>
+    </div>
 
-        <div class="card">
-          <i class="fas fa-book"></i>
-          <h3>Self Learning</h3>
-          <p>Belajar mandiri melalui dokumentasi dan video online.</p>
-        </div>
-      </div>
-    </section>
+    <div class="card" onclick="showSkill('self')">
+      <i class="fas fa-book"></i>
+      <h3>Self Learning</h3>
+      <p>Belajar mandiri melalui dokumentasi dan video online.</p>
+    </div>
+
+  </div>
+</section>
 
     <section class="experience">
       <h2>Pengalaman Saya</h2>
@@ -247,46 +244,8 @@
       <h2>Testimonial</h2>
       <p>Kata Kata Untuk Saya Siapapun</p>
 
-      <div class="testimonial-container">
-        <div class="testimonial-card">
-          <p>
-            "Saya sangat terkesan dengan kemampuan backend developmentnya. Cepat
-            belajar dan kreatif!"
-          </p>
-          <div class="testimonial-user">
-            <img
-              src="https://img.freepik.com/foto-gratis/matahari-terbit-di-atas-kabut-pagi-di-phu-lang-ka-phayao-di-thailand_335224-803.jpg?semt=ais_hybrid&w=740&q=80"
-              alt="Mentor 1"
-            />
-            <span>Rina</span>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <p>"keren"</p>
-          <div class="testimonial-user">
-            <img
-              src="https://st3.depositphotos.com/3277955/18631/v/450/depositphotos_186312634-stock-illustration-sitting-side-view-striped-ginger.jpg"
-              alt="Teman 1"
-            />
-            <span>Cristiano Ronaldo</span>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <p>
-            "Semangat Lagi ya belajarnya"
-          </p>
-          <div class="testimonial-user">
-            <img
-              src="https://www.shutterstock.com/image-vector/cool-orange-cat-pose-pixel-600nw-2629802583.jpg"
-              alt="Mentor 2"
-            />
-            <span>Jinyo Cristian</span>
-          </div>
-        </div>
-      </div>
-
+      <div class="testimonial-container" id="testimonialContainer"></div>
+      
       <button class="prev">&#10094;</button>
       <button class="next">&#10095;</button>
       
@@ -295,6 +254,15 @@
     <footer id="contact">
       <p>© 2026 Satria Henggar Yoselino | Portfolio</p>
     </footer>
+
+    <div id="skillDetail" style="display:none;">
+  <div class="detail-box">
+    <h3 id="detailTitle"></h3>
+    <p id="detailDesc"></p>
+
+    <button onclick="closeSkill()">Tutup</button>
+  </div>
+</div>
 
     <script src="script.js"></script>
   </body>

@@ -75,23 +75,72 @@ window.addEventListener("scroll", animateProgress);
 window.addEventListener("load", animateProgress);
 
 function showSkill(skill) {
+
   const detail = document.getElementById("skillDetail");
   const title = document.getElementById("detailTitle");
   const desc = document.getElementById("detailDesc");
 
-  if (skill === "php") {
-    title.innerText = "PHP (Hypertext Preprocessor)";
+
+  if (skill === "js") {
+
+    title.innerText = "JavaScript";
+
     desc.innerText =
-      "PHP (Hypertext Preprocessor) adalah bahasa pemrograman server-side yang digunakan untuk membangun website dan aplikasi web dinamis. PHP berjalan di sisi server untuk mengelola logika aplikasi, memproses data, dan berinteraksi dengan database seperti MySQL. Bahasa ini banyak digunakan dalam pengembangan backend karena sintaksnya relatif mudah dipelajari, fleksibel, serta didukung oleh banyak framework seperti Laravel. PHP sangat cocok untuk pembuatan fitur CRUD, sistem autentikasi, REST API, dan pengelolaan data pada aplikasi web.";
+      "JavaScript adalah bahasa pemrograman yang digunakan untuk membuat website menjadi interaktif. Dengan JavaScript, developer dapat memanipulasi DOM, mengambil data dari server menggunakan Fetch API atau AJAX, membuat animasi, validasi form, dan membangun aplikasi web modern.";
+
   }
+
+
+  if (skill === "php") {
+
+    title.innerText = "PHP (Hypertext Preprocessor)";
+
+    desc.innerText =
+      "PHP adalah bahasa pemrograman server-side yang digunakan untuk membangun backend website. PHP dapat mengelola database, membuat sistem login, CRUD, REST API, dan berbagai logika aplikasi web.";
+
+  }
+
 
   if (skill === "golang") {
+
     title.innerText = "Golang (Go)";
+
     desc.innerText =
-      "Golang adalah bahasa pemrograman buatan Google yang fokus pada performa, concurrency, dan kesederhanaan. Sangat cocok untuk backend, REST API, dan sistem berskala besar.";
+      "Golang adalah bahasa pemrograman yang dibuat oleh Google dan digunakan untuk backend, REST API, dan sistem dengan performa tinggi. Golang terkenal cepat, ringan, dan mendukung concurrency.";
+
   }
 
+
+  if (skill === "problem") {
+
+    title.innerText = "Problem Solving";
+
+    desc.innerText =
+      "Problem solving adalah kemampuan untuk menyelesaikan masalah menggunakan logika pemrograman. Ini termasuk analisis masalah, membuat algoritma, debugging, dan membangun solusi yang efisien.";
+
+  }
+
+
+  if (skill === "self") {
+
+    title.innerText = "Self Learning";
+
+    desc.innerText =
+      "Self learning adalah proses belajar mandiri melalui dokumentasi, tutorial, video, dan praktek langsung. Skill ini penting bagi developer untuk terus berkembang mengikuti teknologi terbaru.";
+
+  }
+
+
   detail.style.display = "flex";
+
+}
+
+
+
+function closeSkill() {
+
+  document.getElementById("skillDetail").style.display = "none";
+
 }
 
 function closeDetail() {
@@ -119,4 +168,35 @@ function closeDetail() {
   if (window.innerWidth > 768) {
     navMenu.classList.remove("show");
   }
+});
+
+const testimonials = [
+  {
+    text: "Tetaplah bernafas",
+    name: "Fadlan Samir",
+    img: "https://img.freepik.com/foto-gratis/matahari-terbit-di-atas-kabut-pagi-di-phu-lang-ka-phayao-di-thailand_335224-803.jpg"
+  },
+  {
+    text: "Keren bangettt wuw",
+    name: "Tenka Izumo",
+    img: "https://i.pinimg.com/736x/5d/81/f0/5d81f071a8b36548fccc06f5868463b5.jpg"
+  },
+  {
+    text: "Semangat lagi belajarnya",
+    name: "Jinyo Cristian",
+    img: "https://www.shutterstock.com/image-vector/cool-orange-cat-pose-pixel-600nw-2629802583.jpg"
+  },
+
+];
+
+testimonials.forEach(testi => {
+  container.innerHTML += `
+    <div class="testimonial-card">
+      <p>"${testi.text}"</p>
+      <div class="testimonial-user">
+        <img src="${testi.img}" />
+        <span>${testi.name}</span>
+      </div>
+    </div>
+  `;
 });

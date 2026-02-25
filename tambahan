@@ -1,0 +1,241 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<section class="hero">
+
+<div>
+
+<h1>Jasa Pembuatan Website Elegan & Profesional</h1>
+
+<p>Meningkatkan bisnis anda dengan website modern dan premium</p>
+
+<a href="#harga" class="btn">Lihat Paket</a>
+
+</div>
+
+</section>
+
+<section>
+<div class="container">
+
+<div class="title">
+<h2>Paket Harga Website</h2>
+<p>Pilih paket terbaik sesuai kebutuhan bisnis Anda</p>
+</div>
+
+<div class="pricing">
+
+
+<div class="card">
+
+<h3>Basic</h3>
+
+<div class="price">Rp 500K</div>
+
+<ul class="features">
+<li>1 Halaman</li>
+<li>Desain Responsive</li>
+<li>Gratis Revisi 1x</li>
+<li>Estimasi 2 Hari</li>
+</ul>
+
+<a href="#" class="btn">
+<i class="fab fa-whatsapp"></i>
+Hubungi WhatsApp
+</a>
+
+</div>
+
+
+
+<div class="card popular">
+
+<div class="badge">PALING POPULER</div>
+
+<h3>Professional</h3>
+
+<div class="price">Rp 1.500K</div>
+
+<ul class="features">
+<li>5 Halaman</li>
+<li>Admin Panel</li>
+<li>Gratis Revisi 3x</li>
+<li>Estimasi 5 Hari</li>
+</ul>
+
+<a href="#" class="btn">
+<i class="fab fa-whatsapp"></i>
+Hubungi WhatsApp
+</a>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Business</h3>
+
+<div class="price">Rp 3.000K</div>
+
+<ul class="features">
+<li>Unlimited Halaman</li>
+<li>Admin Panel</li>
+<li>Gratis Revisi Unlimited</li>
+<li>Estimasi 7 Hari</li>
+</ul>
+
+<a href="#" class="btn">
+<i class="fab fa-whatsapp"></i>
+Hubungi WhatsApp
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+</section>
+
+<section class="contact">
+
+<h2>
+
+Konsultasi Sekarang
+
+</h2>
+
+<p>
+
+Diskusikan kebutuhan website Anda
+
+</p>
+
+
+<a href="https://wa.me/628123456789" class="btn-wa">
+
+<i class="fab fa-whatsapp"></i>
+
+Hubungi WhatsApp
+
+</a>
+
+
+</section>
+
+
+.container{
+max-width:1100px;
+margin:auto;
+}
+
+.title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.title h2{
+font-size:32px;
+font-weight:600;
+color:#1f1f1f;
+margin-bottom:10px;
+}
+
+.title p{
+color:#777;
+}
+
+
+/* CARD PRICING */
+
+.pricing{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+justify-content:center;
+}
+
+.card{
+background:#fff;
+padding:40px 30px;
+border-radius:14px;
+width:320px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+position:relative;
+transition:0.3s;
+border:1px solid #eee;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 30px rgba(0,0,0,0.08);
+}
+
+
+/* POPULAR CARD */
+
+.card.popular{
+border:2px solid #e53935;
+}
+
+.badge{
+position:absolute;
+top:-12px;
+left:50%;
+transform:translateX(-50%);
+background:#e53935;
+color:#fff;
+padding:6px 16px;
+font-size:12px;
+border-radius:20px;
+font-weight:500;
+letter-spacing:0.5px;
+}
+
+
+.card h3{
+text-align:center;
+margin-bottom:10px;
+font-weight:600;
+}
+
+.price{
+text-align:center;
+font-size:34px;
+font-weight:bold;
+margin:20px 0;
+color:#1f1f1f;
+}
+
+.features{
+list-style:none;
+margin-bottom:30px;
+}
+
+.features li{
+padding:10px 0;
+border-bottom:1px solid #f1f1f1;
+font-size:14px;
+color:#555;
+}
+
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:120px 20px 60px;
+}
+
+.hero h1{
+font-size:52px;
+margin-bottom:20px;
+}
+
+.hero p{
+color:#6b7280;
+margin-bottom:35px;
+font-size:18px;
+}

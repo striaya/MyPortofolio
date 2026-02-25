@@ -116,164 +116,612 @@
   border-radius: 5px;
 }
 
-.hero {
-  min-height: 70vh;
-  background: url("../img/gifbmw.gif") center / cover no-repeat;
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 0 80px;
+/* CONTAINER */
+
+.container{
+
+max-width:1100px;
+
+margin:auto;
+
+padding:0 20px;
+
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.35);
+
+
+/* TITLE */
+
+.title{
+
+text-align:center;
+
+margin-bottom:50px;
+
 }
 
-.hero-overlay {
-  position: relative;
-  color: #fff;
-  max-width: 500px;
+
+.title h2{
+
+font-size:32px;
+
+font-weight:600;
+
+color:#1f1f1f;
+
+margin-bottom:10px;
+
 }
 
-.badge {
-  display: inline-block;
-  background: #ffd100;
-  color: #000;
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-weight: 600;
-  margin-bottom: 20px;
+
+.title p{
+
+color:#777;
+
 }
 
-.hero h1 {
-  font-size: 52px;
-  line-height: 1.2;
-  margin-bottom: 20px;
+
+
+/* HERO */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:120px 20px 100px;
+
 }
 
-.hero h1 span {
-  color: #ffd100;
+
+.hero-content{
+
+max-width:700px;
+
 }
 
-.hero p {
-  font-size: 16px;
-  margin-bottom: 25px;
+
+.hero h1{
+
+font-size:52px;
+
+margin-bottom:20px;
+
+line-height:1.2;
+
 }
 
-.btn {
-  display: inline-block;
-  padding: 14px 30px;
-  background: #ffa600;
-  color: #000000;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: 0.3s;
+
+.hero p{
+
+color:#6b7280;
+
+margin-bottom:35px;
+
+font-size:18px;
+
 }
 
-@media (max-width: 768px) {
-  .hero {
-    padding: 0 25px;
-    text-align: center;
-    justify-content: center;
-  }
 
-  .hero-overlay {
-    max-width: 100%;
-  }
 
-  .hero h1 {
-    font-size: 36px;
-  }
+/* BUTTON */
+
+.btn{
+
+display:inline-block;
+
+padding:14px 30px;
+
+background:#111;
+
+color:#fff;
+
+text-decoration:none;
+
+border-radius:8px;
+
+font-size:15px;
+
 }
 
-.btn:hover {
-  background: #ffd100;
-  color: #000;
+
+.btn:hover{
+
+background:#333;
+
 }
 
-.brands {
-  display: flex;
-  justify-content: space-around;
-  padding: 40px;
-  background: #7e7e7e;
+
+
+/* ======================= */
+/* PRICING */
+/* ======================= */
+
+.pricing{
+
+display:grid;
+
+grid-template-columns: repeat(3, 1fr);
+
+gap:25px;
+
+max-width:1000px;
+
+margin:auto;
+
+margin-bottom:100px;
+
 }
 
-.brands img {
-  height: 30px;
-  filter: grayscale(100%);
+
+
+/* CARD */
+
+.card{
+
+background:#fff;
+
+padding:40px 30px;
+
+border-radius:14px;
+
+width:100%;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+
+position:relative;
+
+transition:0.3s;
+
+border:1px solid #eee;
+
+text-align:center;
+
 }
 
-.products {
-  padding: 80px;
+
+.card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 15px 30px rgba(0,0,0,0.08);
+
 }
 
-.products h2 {
-  font-size: 32px;
-  margin-bottom: 40px;
+
+
+/* POPULAR */
+
+.card.popular{
+
+border:2px solid #e53935;
+
 }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
+
+.badge{
+
+position:absolute;
+
+top:-12px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+background:#e53935;
+
+color:#fff;
+
+padding:6px 16px;
+
+font-size:12px;
+
+border-radius:20px;
+
+font-weight:500;
+
 }
 
-.card {
-  background: white;
-  border-radius: 20px;
-  overflow: hidden;
-  padding-bottom: 20px;
-  text-align: center;
-  transition: 0.3s;
+
+
+/* PRICE */
+
+.price{
+
+font-size:34px;
+
+font-weight:bold;
+
+margin:20px 0;
+
+color:#1f1f1f;
+
 }
 
-.card img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
+
+
+/* FEATURES */
+
+.features{
+
+list-style:none;
+
+padding:0;
+
+margin-bottom:30px;
+
 }
 
-.card h3 {
-  margin-top: 15px;
+
+.features li{
+
+padding:10px 0;
+
+border-bottom:1px solid #f1f1f1;
+
+font-size:14px;
+
+color:#555;
+
 }
 
-.card span {
-  color: #777777;
-  font-size: 14px;
+
+
+/* ======================= */
+/* CONTACT */
+/* ======================= */
+
+.contact{
+
+text-align:center;
+
+padding:100px 20px;
+
+background:#fafafa;
+
 }
 
-.card:hover {
-  transform: translateY(-10px);
+
+.btn-wa{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:16px 35px;
+
+background:#25D366;
+
+color:white;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-size:17px;
+
 }
 
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: 0.8s ease;
+
+.btn-wa i{
+
+margin-right:10px;
+
+font-size:20px;
+
 }
 
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
+
+.btn-wa:hover{
+
+background:#1ebe5d;
+
 }
 
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    gap: 40px;
-    padding: 40px;
-  }
 
-  .hero h1 {
-    font-size: 36px;
-  }
+@media(max-width:992px){
 
-  .hero-img img {
-    width: 260px;
-  }
+.pricing{
+
+grid-template-columns: repeat(2, 1fr);
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+
+padding:100px 20px;
+
+}
+
+
+.hero h1{
+
+font-size:32px;
+
+}
+
+
+.hero p{
+
+font-size:16px;
+
+}
+
+
+.pricing{
+
+grid-template-columns: 1fr;
+
+}
+
+
+.title h2{
+
+font-size:26px;
+
+}
+
+}
+
+
+
+/* SMALL MOBILE */
+
+@media(max-width:480px){
+
+.hero h1{
+
+font-size:26px;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+.btn{
+
+padding:12px 24px;
+
+font-size:14px;
+
+}
+
+.btn-wa{
+
+padding:14px 25px;
+
+font-size:15px;
+
+}
+
+}
+
+/* ============================= */
+/* RESPONSIVE WEBSITE */
+/* ============================= */
+
+
+/* LAPTOP KECIL */
+@media (max-width:1200px){
+
+.container{
+
+padding:0 30px;
+
+}
+
+.pricing{
+
+grid-template-columns: repeat(3, 1fr);
+
+gap:20px;
+
+}
+
+}
+
+
+
+/* TABLET */
+@media (max-width:992px){
+
+.hero{
+
+padding:100px 30px 80px;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+
+.pricing{
+
+grid-template-columns: repeat(2, 1fr);
+
+justify-content:center;
+
+}
+
+
+.card{
+
+padding:35px 25px;
+
+}
+
+}
+
+
+
+/* TABLET KECIL */
+@media (max-width:768px){
+
+.hero{
+
+min-height:auto;
+
+padding:80px 20px;
+
+}
+
+.hero h1{
+
+font-size:32px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+
+.title h2{
+
+font-size:26px;
+
+}
+
+
+.pricing{
+
+grid-template-columns: 1fr;
+
+max-width:400px;
+
+margin:auto;
+
+}
+
+
+.card{
+
+width:100%;
+
+}
+
+
+.contact{
+
+padding:80px 20px;
+
+}
+
+}
+
+
+
+/* HP */
+@media (max-width:480px){
+
+.container{
+
+padding:0 15px;
+
+}
+
+
+.hero{
+
+padding:60px 15px;
+
+}
+
+
+.hero h1{
+
+font-size:26px;
+
+}
+
+
+.hero p{
+
+font-size:15px;
+
+}
+
+
+.btn{
+
+width:100%;
+
+padding:14px;
+
+}
+
+
+.btn-wa{
+
+width:100%;
+
+padding:14px;
+
+}
+
+
+.price{
+
+font-size:28px;
+
+}
+
+}
+
+
+
+/* HP KECIL */
+@media (max-width:360px){
+
+.hero h1{
+
+font-size:22px;
+
+}
+
+
+.title h2{
+
+font-size:22px;
+
+}
+
 }
 
 footer {
