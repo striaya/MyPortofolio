@@ -121,7 +121,7 @@
 
 .contact {
   min-height: 85vh;
-  background: url("../img/nelayan.gif") center/cover no-repeat;
+  background: black;
   position: relative;
   display: flex;
   align-items: center;
@@ -423,3 +423,13 @@ font-size: 14px;
 
 }
 
+.reveal{
+opacity:0;
+transform:translateY(30px);
+transition:0.8s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
