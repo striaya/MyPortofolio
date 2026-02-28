@@ -1,12 +1,4 @@
-window.addEventListener("load", () => {
-  document.querySelectorAll(".reveal").forEach((el) => {
-    setTimeout(() => {
-      el.classList.add("active");
-    }, 200);
-  });
-});
-
- const hamburger = document.getElementById("hamburger");
+const hamburger = document.getElementById("hamburger");
   const navMenu = document.querySelector(".nav-menu");
   const dropdowns = document.querySelectorAll(".dropdown > a");
 
@@ -27,4 +19,36 @@ window.addEventListener("load", () => {
   if (window.innerWidth > 768) {
     navMenu.classList.remove("show");
   }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  const reveals = document.querySelectorAll(".contact-info, .contact-form");
+
+  function revealOnScroll() {
+    reveals.forEach((el) => {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+
+      if (elementTop < windowHeight - 100) {
+        el.style.opacity = "1";
+        el.style.transform = "translateY(0)";
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
+
+  const socialLinks = document.querySelectorAll(".social-media a");
+
+  socialLinks.forEach(link => {
+    link.addEventListener("click", function() {
+      this.style.transform = "scale(0.9)";
+      setTimeout(() => {
+        this.style.transform = "scale(1)";
+      }, 150);
+    });
+  });
+
 });
