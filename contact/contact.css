@@ -144,7 +144,7 @@
 }
 
 .contact{
-  height: 750px;
+  padding: 50px 20px;
   min-height:90vh;
   background:black;
   display:flex;
